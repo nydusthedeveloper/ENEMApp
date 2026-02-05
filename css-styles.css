@@ -1,0 +1,42 @@
+:root {
+    --bg-color: #0a0a0f;
+    --text-color: #e2e8f0;
+    --glass: rgba(255, 255, 255, 0.03);
+    --neon: #00f2ff;
+}
+
+.light {
+    --bg-color: #f0f4f8;
+    --text-color: #1a202c;
+    --glass: rgba(0, 0, 0, 0.05);
+    --neon: #7000ff;
+}
+
+body { font-family: 'Rajdhani', sans-serif; }
+
+.glass-header { background: var(--glass); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.1); }
+.glass-nav { background: rgba(0,0,0,0.4); backdrop-filter: blur(10px); }
+
+.ai-msg { display: flex; gap: 12px; animation: fadeIn 0.4s ease; }
+.icon-avatar { background: var(--neon); padding: 8px; border-radius: 10px; color: #000; box-shadow: 0 0 15px var(--neon); }
+.msg-content { 
+    background: var(--glass); 
+    padding: 15px; 
+    border-radius: 0 15px 15px 15px; 
+    border-left: 2px solid var(--neon);
+    font-size: 0.9rem;
+}
+
+.user-msg { display: flex; justify-content: flex-end; animation: fadeIn 0.3s ease; }
+.user-msg .content { 
+    background: var(--neon); 
+    color: #000; 
+    padding: 10px 18px; 
+    border-radius: 15px 15px 0 15px; 
+    font-weight: bold; 
+}
+
+.nav-item { display: flex; justify-content: center; color: #64748b; transition: 0.2s; }
+.nav-item.active { color: var(--neon); }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }

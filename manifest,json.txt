@@ -1,0 +1,15 @@
+{
+  "name": "Aura ENEM IA",
+  "short_name": "Aura",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#00f2ff",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2592/2592168.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
